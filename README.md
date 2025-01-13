@@ -4,7 +4,7 @@ This is my configuration to have a Debian server as a router, this can be edited
 
 # Specs
 **Zyxel VMG3006-D70A**
-![Zyxel VMG3006-D70A](https://cdn.razuuu.de/gh/debian-router/img_vmg3006-d70a_p500px_transparent.png =200x)
+![Zyxel VMG3006-D70A](https://cdn.razuuu.de/gh/debian-router/img_vmg3006-d70a_p500px_transparent.png)
 `LAN1`: connected to `eth2`
 `LAN2`: connected to `eth1`
 `DSL`: `RJ11 / DSL Cable connected` 
@@ -12,7 +12,7 @@ This is my configuration to have a Debian server as a router, this can be edited
 ##
 **Zyxel Gigabit Ethernet Switch GS-108B v3**
 
-![Zyxel Gigabit Ethernet Switch GS-108B v3](https://cdn.razuuu.de/gh/debian-router/img_gs-108b-v3_p_600transparent.png =300x)
+![Zyxel Gigabit Ethernet Switch GS-108B v3](https://cdn.razuuu.de/gh/debian-router/img_gs-108b-v3_p_600transparent.png)
 `LAN1`: connected to `eth1`
 All other ports for clients.
 
