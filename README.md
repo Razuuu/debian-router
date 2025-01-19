@@ -14,7 +14,7 @@ This is my configuration to have a Debian server as a router, this can be edited
 **Zyxel Gigabit Ethernet Switch GS-108B v3**  
 
 ![Zyxel Gigabit Ethernet Switch GS-108B v3](https://cdn.razuuu.de/gh/debian-router/img_gs-108b-v3_p_600transparent.png)  
-`LAN1`: connected to `eth1`  
+`LAN8`: connected to `eth1`  
 All other ports for clients.  
 
 ##
