@@ -50,6 +50,7 @@ apt install firmware-realtek resolvconf ntp dnsutils net-tools bridge-utils bind
 **Enable IPv4 forward for NAT purposes**  
 ```
 echo "net.ipv4.ip_forward=1" > /etc/sysctl.d/ip-forward.conf
+echo "#net.ipv6.conf.all.forwarding=1" >> /etc/sysctl.d/ip-forward.conf
 sysctl -p
 ```
 
