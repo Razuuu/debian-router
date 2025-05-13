@@ -1,0 +1,12 @@
+options {
+  directory "/var/cache/bind";
+
+  allow-recursion {
+    localhost;
+    localnets;
+  };
+
+  dnssec-validation no;
+
+  listen-on-v6 { any; };
+};

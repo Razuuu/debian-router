@@ -1,0 +1,5 @@
+zone "sus" {
+	type master;
+	notify no;
+	file "/etc/bind/db.sus";
+};

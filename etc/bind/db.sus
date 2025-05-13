@@ -1,0 +1,31 @@
+; BIND reverse data file for sus zone
+$TTL	86400
+@	IN	SOA	sus. root.sus. (
+			      11	; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			  86400 )	; Negative Cache TTL
+; NS
+@	IN	NS	sus.
+@	IN	A	10.3.10.1
+;@	IN	AAAA	fexx::x
+
+; DNS
+router	IN	A	10.3.10.1
+;router	IN	AAAA	fexx::x
+
+; SERVER / NAS
+celeron	IN	A	10.3.10.1
+;celeron	IN	AAAA	fexx::x
+server	IN	A	10.3.10.1
+;server	IN	AAAA	fexx::x
+nas	IN	A	10.3.10.1
+;nas	IN	AAAA	fexx::x
+gateway	IN	A	10.2.10.1
+;gateway	IN	AAAA	fexx::x
+gw	IN	A	10.2.10.1
+;gw	IN	AAAA	fexx::x
+zyxel	IN	A	10.2.10.1
+;zyxel	IN	AAAA	fexx::x
+gws	IN	A	10.3.10.1
