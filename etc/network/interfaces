@@ -1,0 +1,55 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+#####################################################
+#                                                   #
+# eth0/ppp0 = Connected to Modem's PPPoE connection #
+#      eth1 = DHCP Server / Connected to the switch #
+#      eth2 = Connected to Modem's Webinterface     #
+#                                                   #
+#####################################################
+
+# eth0 / PPPoE
+auto eth0
+iface eth0 inet manual
+
+auto dsl-provider
+iface dsl-provider inet ppp
+	pre-up /bin/ip link set eth0 up
+	provider dsl-provider
+
+# eth1 / DHCP Server / Switch
+auto eth1
+iface eth1 inet static
+	address 10.3.10.1
+	netmask 255.255.255.0
+
+# eth2 / Modem's Webinterface
+auto eth2
+#allow-hotplug eth2
+iface eth2 inet static
+#	address 192.168.178.2
+	address 10.2.10.2
+	netmask 255.255.255.0
+
+# NEW
+#iface eth2 inet6 manual
+#        disable_ipv6 1
+
+# EOL Config
+# The primary network interface
+#auto eth1
+#iface eth1 inet dhcp
+#	address 10.3.10.2
+#	netmask 255.255.255.0
+#	gateway 10.3.10.1
+#	dns-nameservers 127.0.0.1
+
+#iface eth1 inet6 dhcp
+#	pre-up ip token set ::1 dev eth1
